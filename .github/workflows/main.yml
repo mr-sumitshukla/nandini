@@ -3,7 +3,7 @@ name: Connect to EC2 and Run Commands
 on:
   push:
     branches:
-      - release/pre-prod
+      - main
 
 jobs:
   run-commands:
