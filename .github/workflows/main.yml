@@ -23,6 +23,7 @@ jobs:
       - name: Run Commands on EC2
         run: |
           ssh -o "StrictHostKeyChecking=no" ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-          mkdir bhu
+          cd /home/ubuntu
+          mkdir bhupendra
           ls
           EOF
